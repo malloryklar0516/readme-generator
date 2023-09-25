@@ -1,7 +1,7 @@
 
-  # Generate ReadMe Project [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-  # description
-  prompts users with questions about the project and will write the information into a readme file
+  # README Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+  # Description
+  Prompts user with questions about their project and generates a README file
   # Table of Contents
   * [Installation](#-Installation)
   * [Usage](#-Usage)
@@ -10,17 +10,19 @@
   * [Testing](#-Testing)
   * [Questions](#-Questions)
   # Installation
-  run node index.js in terminal
+  install inquirer before you run the application
   # Usage
-  install inquirer and run node index.js in the terminal
+  run node index.js in terminal once inquirer is installed
   # Contribution
-  Mallory Klar 
-
-    # License 
+  Mallory Klar
+  # License
+  
     MIT
-    [https://opensource.org/license/mit/](https://opensource.org/license/mit/)
+    https://opensource.org/license/mit/
   # Testing
-  test using jest
+  test using Jest
   # Questions
+  See contact information below if you have any questions.
   https://github.com/malloryklar0516
-  email@gmail.com
+
+  email@gmail.co

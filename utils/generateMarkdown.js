@@ -22,16 +22,16 @@ else if (license ==="None"){
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license ==="Apache 2.0"){
-    return "[https://opensource.org/licenses/Apache-2.0](https://opensource.org/licenses/Apache-2.0)"
+    return "https://opensource.org/licenses/Apache-2.0"
 }
 else if (license ==="GNU GPLv2"){
-    return "[https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
+    return "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"
 }
 else if (license ==="Mozilla"){
-    return "[https://opensource.org/licenses/MPL-2.0)](https://opensource.org/licenses/MPL-2.0)"
+    return "https://opensource.org/licenses/MPL-2.0"
 }
 else if (license ==="MIT"){
-    return "[https://opensource.org/license/mit/](https://opensource.org/license/mit/)"
+    return "https://opensource.org/license/mit/"
 }
 else if (license ==="None"){
     return ""
@@ -45,7 +45,6 @@ function renderLicenseSection(license) {
     return ""}
     else if (license === "Apache 2.0"  || "GNU GPLv2"||"Mozilla"||"MIT") {
     return `
-    # License 
     ${license}
     ${renderLicenseLink(license)}`
     }
@@ -70,12 +69,13 @@ function generateMarkdown(data) {
   ${data.usage}
   # Contribution
   ${data.contribution}
+  # License
   ${renderLicenseSection(data.license)}
   # Testing
   ${data.test}
   # Questions
   See contact information below if you have any questions.
-  https://github.com/${data.github}
+  https://github.com/${data.github}\n
   ${data.email}
 `;
 }
