@@ -44,10 +44,10 @@ function renderLicenseSection(license) {
   if (license ==="None"){
     return ""}
     else if (license === "Apache 2.0"  || "GNU GPLv2"||"Mozilla"||"MIT") {
-    return `
-    ${license}
-    ${renderLicenseLink(license)}`
-    }
+        return `
+        ${license}
+        ${renderLicenseLink(license)}`
+        }
 }
 
 // TODO: Create a function to generate markdown for README
@@ -74,7 +74,7 @@ function generateMarkdown(data) {
   # Testing
   ${data.test}
   # Questions
-  See contact information below if you have any questions.
+  See contact information below if you have any questions.\n
   https://github.com/${data.github}\n
   ${data.email}
 `;
